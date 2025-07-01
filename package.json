@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "NODE_TLS_REJECT_UNAUTHORIZED=0 drizzle-kit push"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.14",
@@ -15,11 +17,17 @@
     "@radix-ui/react-separator": "^1.1.7",
     "@radix-ui/react-slot": "^1.2.3",
     "@radix-ui/react-tooltip": "^1.2.7",
+    "ai": "^4.3.16",
+    "bcrypt-ts": "^7.1.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "dotenv": "^17.0.0",
+    "drizzle-orm": "^0.44.2",
     "lucide-react": "^0.522.0",
     "next": "15.3.4",
     "next-auth": "^4.24.11",
+    "pg": "^8.16.3",
+    "postgres": "^3.4.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^3.3.1"
